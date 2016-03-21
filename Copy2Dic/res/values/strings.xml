@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Copy2Dic</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">電子書籍やニュースを読むとき、難しい英単語や難しい専門用語がわからなくて困ることはありませんか。Copy2Dicはそんなときにいちいち辞書アプリを開いて調べなくてもすぐ意味を知ることができる便利ツールです。まず知りたい文字列を長押しして、コピーを選択してください。その文字列の意味が画面上に表示されます。調べた情報をキャッシュしているため、一度調べた単語の意味はすぐ表示されますし、通信料も節約できるようになっています。\n\nCopy2Dicは下記のオンライン辞書の情報を使っております。\nデ辞蔵のフリーのオンラインAPI\n  http://dejizo.jp/index.aspx\nWeblio\n  http://www.weblio.jp/\nはてなｷｰﾜｰﾄﾞ\n http://d.hatena.ne.jp/keyword/\nピクシブ百科事典\n http://dic.pixiv.net/\nﾆｺﾆｺ大百科\n  http://dic.nicovideo.jp/\n</string>
+	<string name="setting">設定</string>
+	<string name="history">履歴一覧</string>
+
+	<string name="deji_eng">デ辞蔵(EJDict英和辞典)</string>
+	<string name="wikipedia">デ辞蔵(Wikipedia)</string>
+	<string name="weblio_kokugo">Weblio辞書</string>
+	<string name="weblio_eng">Weblio英和辞典</string>
+	<string name="hatena">はてなｷｰﾜｰﾄﾞ</string>
+	<string name="ewords">IT用語辞典e-Words</string>
+	<string name="pixiv">ピクシブ百科事典</string>
+	<string name="niconico">ﾆｺﾆｺ大百科</string>
+
+	<string name="action_bar_share_with">Share</string>
+	
+	<string name="jisei_remove">英語単語で過去形、現在進行形の場合は時制を除去する。複数形の場合は単数形にする。(試験版)</string>
+	
+	<string name="setting_desc">使用するオンライン辞書のみ、チェックを入れてください。</string>
+</resources>

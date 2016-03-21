@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mypaceengine.clip2dic"
+    android:versionCode="19"
+    android:versionName="1.18" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+ 	<uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mypaceengine.clip2dic.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> 
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mypaceengine.clip2dic.SettingActivity"
+            android:label="@string/setting">
+            <intent-filter> 
+ <!--         <action android:name="android.intent.action.MAIN" />--> 
+         <category android:name="android.intent.category.LAUNCHER" />
+     </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mypaceengine.clip2dic.HistoryActivity"
+            android:label="@string/history">
+            <intent-filter> 
+<!--          <action android:name="android.intent.action.MAIN" />--> 
+         <category android:name="android.intent.category.LAUNCHER" />
+     </intent-filter>
+        </activity>
+        <receiver android:name="com.mypaceengine.clip2dic.StartReceiver"
+                   android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+    </receiver>
+    <receiver android:name="com.mypaceengine.clip2dic.NotifiClickListener"></receiver>
+     <service android:enabled="true" android:name="com.mypaceengine.clip2dic.MainService" />
+     <service android:enabled="true" android:name="com.mypaceengine.clip2dic.RewakeupService" />
+    </application>
+
+
+</manifest>

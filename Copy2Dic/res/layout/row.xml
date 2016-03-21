@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:internal="http://schemas.android.com/apk/prv/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    internal:layout_minHeight="65dp"
+    internal:layout_maxHeight="unbounded">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"/>
+    <LinearLayout
+        android:id="@+id/pnl"
+        android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:layout_toRightOf="@id/icon"
+    	android:paddingRight="25px"
+    	android:paddingLeft="25px"
+    >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        style="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="top"
+        style="@android:style/TextAppearance.StatusBar.EventContent" />
+	</LinearLayout>
+        <Button
+            android:id="@+id/settingbtn"
+            android:text="@string/setting"
+            android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/pnl"
+    	android:layout_centerVertical="true"
+    	/>
+        <Button
+            android:id="@+id/historybtn"
+            android:text="@string/history"
+            android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/settingbtn"
+    	        android:layout_centerVertical="true"
+    	/>
+<!--     </LinearLayout>-->
+</RelativeLayout>
